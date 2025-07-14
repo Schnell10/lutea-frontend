@@ -1,0 +1,1 @@
+export default function BurgerMenu() { return <div>Burger Menu</div>; }

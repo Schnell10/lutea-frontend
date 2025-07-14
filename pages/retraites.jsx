@@ -1,0 +1,1 @@
+export default function Retraites() { return <div>Retraites</div>; }

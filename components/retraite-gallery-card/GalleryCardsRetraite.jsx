@@ -1,0 +1,1 @@
+export default function ModalDetail() { return <div>Détails Retraite</div>; }

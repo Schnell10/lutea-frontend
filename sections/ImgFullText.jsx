@@ -1,0 +1,1 @@
+export default function ImgFullText() { return <section>Image Full + Text</section>; }

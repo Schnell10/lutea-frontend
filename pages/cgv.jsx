@@ -1,0 +1,1 @@
+export default function CGV() { return <div>Conditions Générales de Vente</div>; }

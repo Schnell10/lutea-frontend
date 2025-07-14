@@ -1,0 +1,1 @@
+export default function NewsletterForm() { return <form>Formulaire newsletter</form>; }

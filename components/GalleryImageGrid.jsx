@@ -1,0 +1,1 @@
+export default function GalleryImageGrid() { return <div>Gallery Grid</div>; }

@@ -1,0 +1,34 @@
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/typography";
+@import "./base/global";
+
+@import "./components/button";
+@import "./components/form";
+@import "./components/card";
+@import "./components/modal";
+@import "./components/accordion";
+@import "./components/burger";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./sections/section-img-full";
+@import "./sections/section-img-full-text";
+@import "./sections/section-img-text";
+@import "./sections/section-img-trio-text";
+@import "./sections/section-gallery";
+@import "./sections/section-retreats";
+@import "./sections/section-contacts";
+@import "./sections/section-faq";
+@import "./sections/section-banners";
+
+@import "./pages/home";
+@import "./pages/concept";
+@import "./pages/retraites";
+@import "./pages/galerie";
+@import "./pages/faq";
+@import "./pages/contact";
+
+@import "./libs/fancybox";

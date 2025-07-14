@@ -1,0 +1,1 @@
+export default function CGU() { return <div>Conditions Générales d'Utilisation</div>; }

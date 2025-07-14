@@ -1,0 +1,1 @@
+export default function ImgFull() { return <section>Image Full</section>; }

@@ -1,0 +1,1 @@
+export default function ImgTrioText() { return <section>3 images + text</section>; }

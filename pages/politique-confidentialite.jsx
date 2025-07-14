@@ -1,0 +1,1 @@
+export default function Confidentialite() { return <div>Politique de confidentialité</div>; }
