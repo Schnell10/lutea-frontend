@@ -1,0 +1,124 @@
+@use '../base/variables' as v;
+
+.burger-menu {
+  height: 0.9rem;
+  width: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: v.$color-background-icon;
+  border-radius: v.$border-radius;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: v.$color-background-icon-hover;
+  }
+
+  svg {
+    width: 60%;
+    height: 60%;
+    color: v.$color-icon;
+  }
+}
+
+.burger-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  &__content {
+    position: relative;
+    background: v.$color-primary;
+    animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    width: 100vw;
+    height: 100vh;
+
+    &.closing {
+      animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+
+      li {
+        color: v.$color-white;
+        font-family: 'Tan Pearl', sans-serif;
+        text-transform: uppercase;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+          color: v.$button-gold-bg;
+        }
+      }
+    }
+
+    &-secondary li a {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.3rem;
+    color: v.$color-white;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 2;
+    &:hover {
+      color: v.$button-gold-bg;
+    }
+  }
+}
+
+.burger-modal__separator {
+  width: 60%;
+  margin: 0.9rem auto;
+  border: none;
+  border-top: 0.5px solid v.$color-white;
+  opacity: 0.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}

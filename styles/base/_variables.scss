@@ -1,1 +1,35 @@
-/* base/_variables.scss */
+// 🎨 Couleurs principales
+$color-primary: #81a085; // Couleur dominante du thème (footer, boutons principaux)
+$color-secondary: #a6b39b; // Vert clair secondaire (boutons secondaires)
+$color-gold: #fff3a5; // Bouton "gold" principal (réserver)
+$color-gold-hover: #ffd105; // Hover du bouton "gold"
+
+$color-title: #4e6351; // Titres et texte sur bouton gold
+$color-text: #000000; // Texte principal
+$color-background: #efe8e2; // Fond global
+$color-white: #ffffff;
+
+$color-background-icon: rgba(166, 179, 155, 0.3);
+$color-background-icon-hover: rgba(166, 179, 155, 0.6);
+$color-icon: $color-title;
+
+// 🔘 Bouton primaire
+$button-primary-bg: $color-primary;
+$button-primary-text: $color-white;
+$button-primary-bg-hover: $color-title;
+$button-primary-text-hover: $color-white;
+
+// 🔘 Bouton secondaire
+$button-secondary-bg: $color-secondary;
+$button-secondary-text: $color-white;
+$button-secondary-bg-hover: $color-primary;
+$button-secondary-text-hover: $color-white;
+
+// 🔘 Bouton "gold" (réserver)
+$button-gold-bg: $color-gold;
+$button-gold-text: $color-title;
+$button-gold-bg-hover: $color-gold-hover;
+$button-gold-text-hover: $color-title;
+
+// 🧱 UI divers
+$border-radius: 3px;

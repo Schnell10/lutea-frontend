@@ -1,1 +1,44 @@
-/* layout/_footer.scss */
+@use '../base/variables' as v;
+
+.footer {
+  background-color: v.$color-primary;
+  padding: 1rem 1rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: v.$color-white;
+
+  .social-menu {
+    li {
+      background-color: v.$color-primary;
+      transition: background-color 0.2s ease-in-out;
+      width: 1.2rem;
+      height: 1.2rem;
+      &:hover {
+        background: lighten(v.$color-primary, 4%);
+      }
+
+      svg {
+        color: v.$color-white;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 0.3rem;
+    margin: 0.5rem 0 1rem 0;
+
+    li a {
+      font-size: 0.3rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  &__copyright {
+    font-size: 0.3rem;
+    font-weight: 400;
+  }
+}

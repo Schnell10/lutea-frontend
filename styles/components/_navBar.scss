@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  line-height: 1;
+
+  &__offer {
+    background-color: v.$color-primary;
+    height: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+
+    &-text {
+      font-size: 0.3rem;
+      color: v.$color-white;
+      text-transform: uppercase;
+    }
+  }
+
+  &__usual {
+    background-color: v.$color-background;
+    height: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    position: relative;
+
+    &-left,
+    &-right {
+      flex: 0 0 auto;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .name-lutea {
+        font-size: 8px;
+        color: v.$color-title;
+      }
+    }
+  }
+}

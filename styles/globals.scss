@@ -1,34 +1,37 @@
-@import "./base/reset";
-@import "./base/variables";
-@import "./base/mixins";
-@import "./base/typography";
-@import "./base/global";
+@use './base/reset';
+@use './base/variables';
+@use './base/mixins';
+@use './base/typography';
+@use './base/global';
+@use './base/fonts';
 
-@import "./components/button";
-@import "./components/form";
-@import "./components/card";
-@import "./components/modal";
-@import "./components/accordion";
-@import "./components/burger";
+@use './components/button';
+@use './components/form';
+@use './components/card';
+@use './components/modal';
+@use './components/accordion';
+@use './components/burgerMenu';
+@use './components/navBar';
+@use './components/socialMenu';
 
-@import "./layout/header";
-@import "./layout/footer";
+@use './layout/header';
+@use './layout/footer';
 
-@import "./sections/section-img-full";
-@import "./sections/section-img-full-text";
-@import "./sections/section-img-text";
-@import "./sections/section-img-trio-text";
-@import "./sections/section-gallery";
-@import "./sections/section-retreats";
-@import "./sections/section-contacts";
-@import "./sections/section-faq";
-@import "./sections/section-banners";
+@use './sections/section-img-full';
+@use './sections/section-img-full-text';
+@use './sections/section-img-text';
+@use './sections/section-img-trio-text';
+@use './sections/section-gallery';
+@use './sections/section-retreats';
+@use './sections/section-contacts';
+@use './sections/section-faq';
+@use './sections/section-banners';
 
-@import "./pages/home";
-@import "./pages/concept";
-@import "./pages/retraites";
-@import "./pages/galerie";
-@import "./pages/faq";
-@import "./pages/contact";
+@use './pages/home';
+@use './pages/concept';
+@use './pages/retraites';
+@use './pages/galerie';
+@use './pages/faq';
+@use './pages/contact';
 
-@import "./libs/fancybox";
+@use './libs/fancybox';

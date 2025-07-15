@@ -1,1 +1,17 @@
-/* components/_button.scss */
+@use '../base/variables' as v;
+
+.button-gold {
+  background-color: v.$button-gold-bg;
+  color: v.$color-title;
+  height: 0.7rem;
+  font-size: 0.4rem;
+  font-weight: 500;
+  border-radius: v.$border-radius;
+  padding: 0 4px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: v.$button-gold-bg-hover;
+  }
+}

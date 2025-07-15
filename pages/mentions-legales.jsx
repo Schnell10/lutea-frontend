@@ -1,1 +1,0 @@
-export default function Mentions() { return <div>Mentions légales</div>; }

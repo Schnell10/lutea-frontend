@@ -1,1 +1,4 @@
-/* base/_global.scss */
+@use '../base/variables' as v;
+body {
+  background-color: v.$color-background;
+}

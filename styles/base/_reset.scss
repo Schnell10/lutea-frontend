@@ -1,1 +1,108 @@
-/* base/_reset.scss */
+/* -------- RESET COMPLET -------- */
+
+/* Box sizing universel */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Supprime toutes les marges/paddings par défaut */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+li,
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typo de base neutre */
+body {
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  background-color: white;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Désactive les styles natifs des titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Liens neutres */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listes sans puces/numéros par défaut */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Images et médias responsives */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formulaires neutres */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Préférence pour animations réduites */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
