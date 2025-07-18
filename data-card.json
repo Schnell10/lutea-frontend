@@ -8,7 +8,7 @@
     "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
     "texteModal": "Une retraite immersive de 4 jours <strong class='text-bold'>entre femmes</strong>, pour ralentir, respirer, bouger, créer et partager.<br /><br /><strong class='text-bold'>Yoga, pilates, ateliers créatifs, repas sains et cercles de parole</strong> dans un lieu naturel apaisant.",
     "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/post-insta.pdf",
+    "pdfUrl": "/pdfs/pdf-vide.pdf",
     "boutonReserverLabel": "Réserver cette retraite"
   },
   {
@@ -20,7 +20,7 @@
     "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
     "texteModal": "Un week-end bien-être pour se recentrer avant l'automne.<br /><br />Au programme : <strong class='text-bold'>yoga, méditation, balade en nature, ateliers healthy et temps de repos</strong>.<br /><br /><strong class='text-bold'>Formule tout inclus</strong> dans un cadre doux et naturel.",
     "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/post-insta.pdf",
+    "pdfUrl": "/pdfs/pdf-vide.pdf",
     "boutonReserverLabel": "Réserver cette retraite"
   },
   {
@@ -32,7 +32,7 @@
     "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
     "texteModal": "Une retraite immersive de 4 jours <strong class='text-bold'>entre femmes</strong>, pour ralentir, respirer, bouger, créer et partager.<br /><br /><strong class='text-bold'>Yoga, pilates, ateliers créatifs, repas sains et cercles de parole</strong> dans un lieu naturel apaisant.",
     "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/post-insta.pdf",
+    "pdfUrl": "/pdfs/pdf-vide.pdf",
     "boutonReserverLabel": "Réserver cette retraite"
   },
   {
@@ -44,7 +44,7 @@
     "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
     "texteModal": "Un week-end bien-être pour se recentrer avant l'automne.<br /><br />Au programme : <strong class='text-bold'>yoga, méditation, balade en nature, ateliers healthy et temps de repos</strong>.<br /><br /><strong class='text-bold'>Formule tout inclus</strong> dans un cadre doux et naturel.",
     "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/post-insta.pdf",
+    "pdfUrl": "/pdfs/pdf-vide.pdf",
     "boutonReserverLabel": "Réserver cette retraite"
   }
 ]
