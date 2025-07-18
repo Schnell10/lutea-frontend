@@ -1,0 +1,50 @@
+[
+  {
+    "id": "aout-2025",
+    "categorie": "Bien-être holistique",
+    "titreCard": "Retraite d'été dans les Cévennes",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "titreModal": "Retraite d'été",
+    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "texteModal": "Une retraite immersive de 4 jours <strong class='text-bold'>entre femmes</strong>, pour ralentir, respirer, bouger, créer et partager.<br /><br /><strong class='text-bold'>Yoga, pilates, ateliers créatifs, repas sains et cercles de parole</strong> dans un lieu naturel apaisant.",
+    "boutonPdfLabel": "Télécharger le programme",
+    "pdfUrl": "/pdfs/post-insta.pdf",
+    "boutonReserverLabel": "Réserver cette retraite"
+  },
+  {
+    "id": "septembre-2025",
+    "categorie": "Yoga & nutrition",
+    "titreCard": "Week-end bien-être septembre",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "titreModal": "Retraite de rentrée",
+    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "texteModal": "Un week-end bien-être pour se recentrer avant l'automne.<br /><br />Au programme : <strong class='text-bold'>yoga, méditation, balade en nature, ateliers healthy et temps de repos</strong>.<br /><br /><strong class='text-bold'>Formule tout inclus</strong> dans un cadre doux et naturel.",
+    "boutonPdfLabel": "Télécharger le programme",
+    "pdfUrl": "/pdfs/post-insta.pdf",
+    "boutonReserverLabel": "Réserver cette retraite"
+  },
+  {
+    "id": "aout-2025",
+    "categorie": "Bien-être holistique",
+    "titreCard": "Retraite d'été dans les Cévennes",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "titreModal": "Retraite d'été",
+    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "texteModal": "Une retraite immersive de 4 jours <strong class='text-bold'>entre femmes</strong>, pour ralentir, respirer, bouger, créer et partager.<br /><br /><strong class='text-bold'>Yoga, pilates, ateliers créatifs, repas sains et cercles de parole</strong> dans un lieu naturel apaisant.",
+    "boutonPdfLabel": "Télécharger le programme",
+    "pdfUrl": "/pdfs/post-insta.pdf",
+    "boutonReserverLabel": "Réserver cette retraite"
+  },
+  {
+    "id": "septembre-2025",
+    "categorie": "Yoga & nutrition",
+    "titreCard": "Week-end bien-être septembre",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "titreModal": "Retraite de rentrée",
+    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+    "texteModal": "Un week-end bien-être pour se recentrer avant l'automne.<br /><br />Au programme : <strong class='text-bold'>yoga, méditation, balade en nature, ateliers healthy et temps de repos</strong>.<br /><br /><strong class='text-bold'>Formule tout inclus</strong> dans un cadre doux et naturel.",
+    "boutonPdfLabel": "Télécharger le programme",
+    "pdfUrl": "/pdfs/post-insta.pdf",
+    "boutonReserverLabel": "Réserver cette retraite"
+  }
+]

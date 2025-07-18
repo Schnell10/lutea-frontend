@@ -1,1 +1,18 @@
-/* pages/_retraites.scss */
+@use '../base/variables' as v;
+
+.page-retraites {
+  .section-retreats {
+    display: grid;
+    grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
+    column-gap: 24px;
+    padding: 1rem 0;
+
+    &__container {
+      grid-column: 2 / span 12;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+}

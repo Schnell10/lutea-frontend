@@ -1,1 +1,55 @@
-/* sections/_section-img-text.scss */
+@use '../base/variables' as v;
+
+.section-img-text.right {
+  .section-img-text__img {
+    grid-column: 8 / span 6;
+    grid-row: 1;
+  }
+  .section-img-text__content {
+    grid-column: 2 / span 5;
+  }
+}
+.section-img-text {
+  display: grid;
+  grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
+  column-gap: 24px;
+  padding: 6rem 0;
+
+  &__img {
+    border-radius: v.$border-radius;
+    object-fit: cover;
+    grid-column: 2 / span 6;
+    width: 100%;
+    aspect-ratio: 1/ 1;
+    margin: auto 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    grid-column: 9 / span 5;
+
+    &-title {
+      color: v.$color-title;
+    }
+
+    &-text {
+      font-size: 1.1rem;
+      color: v.$color-text;
+      white-space: pre-line;
+    }
+
+    .button-learn-more {
+      width: fit-content;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+}

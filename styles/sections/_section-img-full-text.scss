@@ -1,1 +1,66 @@
-/* sections/_section-img-full-text.scss */
+@use '../base/variables' as v;
+
+.section-img-full-text {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    border-radius: v.$border-radius;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    filter: brightness(0.5);
+  }
+
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    width: 50%;
+
+    &-title {
+      color: v.$color-white;
+      text-align: center;
+    }
+
+    &-text {
+      font-size: 1.1rem;
+      color: v.$color-white;
+      white-space: pre-line;
+    }
+
+    .button-learn-more {
+      width: fit-content;
+      color: v.$color-white;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 4rem;
+      display: flex;
+      justify-content: center;
+
+      .button-primary,
+      .button-secondary {
+        color: v.$color-white;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+  }
+}

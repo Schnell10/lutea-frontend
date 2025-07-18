@@ -10,14 +10,14 @@
 
   &__offer {
     background-color: v.$color-primary;
-    height: 0.9rem;
+    height: 2.7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 12px;
+    padding: 0 36px;
 
     &-text {
-      font-size: 0.3rem;
+      font-size: 0.9rem;
       color: v.$color-white;
       text-transform: uppercase;
     }
@@ -25,12 +25,12 @@
 
   &__usual {
     background-color: v.$color-background;
-    height: 1.2rem;
+    height: 3.6rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 36px;
     position: relative;
 
     &-left,
@@ -52,7 +52,7 @@
       justify-content: center;
 
       .name-lutea {
-        font-size: 8px;
+        font-size: 24px;
         color: v.$color-title;
       }
     }

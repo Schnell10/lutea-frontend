@@ -1,1 +1,24 @@
-/* pages/_concept.scss */
+@use '../base/variables' as *;
+
+.page-concept {
+  .section-author {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    background: linear-gradient(120deg, #4e6351 0%, #4e6351 85%, #39503e 100%);
+
+    &__title {
+      text-align: center;
+      color: $color-white;
+    }
+
+    .section-img-text {
+      &__content {
+        &-title,
+        &-text {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

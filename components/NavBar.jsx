@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import BurgerMenu from './BurgerMenu';
 import Button from './Button';
 import SocialMenu from './SocialMenu';
@@ -14,7 +15,9 @@ export default function NavBar() {
           <BurgerMenu />
         </div>
         <div className="navbar__usual-center">
-          <h2 className="name-lutea">Lutea</h2>
+          <Link href="/">
+            <h2 className="name-lutea">Lutea</h2>
+          </Link>
         </div>
         <div className="navbar__usual-right">
           <SocialMenu />

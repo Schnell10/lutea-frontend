@@ -1,0 +1,156 @@
+@use '../base/variables' as v;
+
+.learn-more {
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+
+    &--closing {
+      animation: fadeOut 0.4s ease-out forwards;
+    }
+  }
+
+  &-modal {
+    position: relative;
+    background: v.$color-white;
+    border-radius: v.$border-radius;
+    padding: 2rem;
+    margin-top: 2rem;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.4s ease-out;
+
+    &--closing {
+      animation: slideUp 0.4s ease-out forwards;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: v.$color-title;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: v.$color-secondary;
+      color: v.$color-white;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  &-image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      border-radius: 4px;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: v.$color-title;
+    margin: 0;
+    text-align: center;
+  }
+
+  &-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: v.$color-text;
+    margin: 0;
+    text-align: justify;
+    white-space: pre-line;
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .learn-more {
+    &-modal {
+      margin-top: 1rem;
+      padding: 1.5rem;
+      width: 95%;
+    }
+
+    &-title {
+      font-size: 1.25rem;
+    }
+
+    &-text {
+      font-size: 0.9rem;
+    }
+  }
+}

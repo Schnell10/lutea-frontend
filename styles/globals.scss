@@ -7,20 +7,23 @@
 
 @use './components/button';
 @use './components/form';
-@use './components/card';
 @use './components/modal';
 @use './components/accordion';
 @use './components/burgerMenu';
 @use './components/navBar';
 @use './components/socialMenu';
+@use './components/newsletterForm';
+@use './components/learnMore';
+@use './components/cardRetreat';
+@use './components/galleryCardRetreat';
 
 @use './layout/header';
 @use './layout/footer';
 
-@use './sections/section-img-full';
+@use './sections/section-icon';
 @use './sections/section-img-full-text';
 @use './sections/section-img-text';
-@use './sections/section-img-trio-text';
+@use './sections/section-img-duo-text';
 @use './sections/section-gallery';
 @use './sections/section-retreats';
 @use './sections/section-contacts';
@@ -33,5 +36,3 @@
 @use './pages/galerie';
 @use './pages/faq';
 @use './pages/contact';
-
-@use './libs/fancybox';

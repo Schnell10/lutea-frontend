@@ -1,8 +1,8 @@
 @use '../base/variables' as v;
 
 .burger-menu {
-  height: 0.9rem;
-  width: 0.9rem;
+  height: 2.7rem;
+  width: 2.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.5rem;
+      gap: 1.5rem;
 
       li {
         color: v.$color-white;
@@ -64,16 +64,20 @@
       }
     }
 
+    &-main li a {
+      font-size: 3rem;
+    }
+
     &-secondary li a {
-      font-size: 0.8rem;
+      font-size: 2.4rem;
     }
   }
 
   &__close {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 1.3rem;
+    top: 2rem;
+    right: 3rem;
+    font-size: 3rem;
     color: v.$color-white;
     cursor: pointer;
     transition: color 0.2s;
@@ -86,7 +90,7 @@
 
 .burger-modal__separator {
   width: 60%;
-  margin: 0.9rem auto;
+  margin: 2.7rem auto;
   border: none;
   border-top: 0.5px solid v.$color-white;
   opacity: 0.5;

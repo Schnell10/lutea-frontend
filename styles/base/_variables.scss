@@ -6,6 +6,7 @@ $color-gold-hover: #ffd105; // Hover du bouton "gold"
 
 $color-title: #4e6351; // Titres et texte sur bouton gold
 $color-text: #000000; // Texte principal
+// #666 peu etre mieux pour le text
 $color-background: #efe8e2; // Fond global
 $color-white: #ffffff;
 
@@ -17,13 +18,11 @@ $color-icon: $color-title;
 $button-primary-bg: $color-primary;
 $button-primary-text: $color-white;
 $button-primary-bg-hover: $color-title;
-$button-primary-text-hover: $color-white;
 
 // 🔘 Bouton secondaire
-$button-secondary-bg: $color-secondary;
-$button-secondary-text: $color-white;
-$button-secondary-bg-hover: $color-primary;
-$button-secondary-text-hover: $color-white;
+$button-secondary-bg: rgba(166, 179, 155, 0.3);
+$button-secondary-text: $color-title;
+$button-secondary-bg-hover: rgba(166, 179, 155, 0.6);
 
 // 🔘 Bouton "gold" (réserver)
 $button-gold-bg: $color-gold;
@@ -32,4 +31,4 @@ $button-gold-bg-hover: $color-gold-hover;
 $button-gold-text-hover: $color-title;
 
 // 🧱 UI divers
-$border-radius: 3px;
+$border-radius: 6px;

@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+
+.gallery-cards-retreat {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.modal-retreat-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+.modal-retreat {
+  padding-top: 7rem;
+  background: v.$color-white;
+  width: 85%;
+  max-width: 90vw;
+  height: 100%;
+  animation: slideInLeft 0.4s cubic-bezier(0.77, 0, 0.18, 1) both;
+  position: relative;
+  overflow-y: auto;
+
+  &__close {
+    position: absolute;
+    top: 7rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    color: v.$color-title;
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+      color: v.$button-gold-bg;
+    }
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -2,3 +2,7 @@
 body {
   background-color: v.$color-background;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
