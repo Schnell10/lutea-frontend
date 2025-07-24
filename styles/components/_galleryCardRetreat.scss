@@ -1,18 +1,53 @@
 @use '../base/variables' as v;
 
 .gallery-cards-retreat {
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
   padding: 2rem 0;
+  > *:nth-child(odd):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%; // largeur par défaut
+    max-width: calc((100% - 2rem) / 2); // 2rem = gap, /2 = largeur d'une colonne
+    //   display: flex;
+    //   flex-direction: row-reverse;
+    //   height: 600px;
+
+    //   .card-retreat__img-wrapper {
+    //     width: 75%;
+    //     border-radius: 0 6px 6px 0;
+    //   }
+
+    //   .card-retreat__content {
+    //     align-items: flex-start;
+
+    //     justify-content: center;
+    //     gap: 3rem;
+
+    //     .card-retreat__title {
+    //       margin-bottom: 2rem;
+    //     }
+
+    //     .card-retreat__more-btn {
+    //       width: 100%;
+    //       margin-top: 0;
+    //     }
+
+    //     .card-retreat__infos span {
+    //       flex: 1;
+    //     }
+    //   }
+  }
 }
 .modal-retreat-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 10;
 }
 .modal-retreat {
-  padding-top: 7rem;
+  padding-top: 1.5rem;
   background: v.$color-white;
   width: 85%;
   max-width: 90vw;
@@ -20,12 +55,19 @@
   animation: slideInLeft 0.4s cubic-bezier(0.77, 0, 0.18, 1) both;
   position: relative;
   overflow-y: auto;
+  display: flex;
+  align-items: center;
+
+  .section-img-text {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   &__close {
     position: absolute;
-    top: 7rem;
-    right: 1.5rem;
-    font-size: 3rem;
+    top: 2.5rem;
+    right: 2rem;
+    font-size: 2rem;
     color: v.$color-title;
     cursor: pointer;
     transition: color 0.2s;

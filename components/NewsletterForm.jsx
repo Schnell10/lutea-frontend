@@ -47,7 +47,7 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className="section-newsletter">
+    <section className="section-newsletter">
       <div className="newsletter__container">
         <div className="newsletter-decor-icons">
           <Mail className="icon" />
@@ -93,6 +93,10 @@ export default function NewsletterForm() {
             </button>
           </div>
 
+          {emailTouched && email && !isEmailValid && (
+            <p className="newsletter__form-error">Veuillez entrer un email valide.</p>
+          )}
+
           <label className="newsletter__form-label">
             <input
               type="checkbox"
@@ -107,10 +111,6 @@ export default function NewsletterForm() {
             </p>
           </label>
 
-          {emailTouched && email && !isEmailValid && (
-            <p className="newsletter__form-error">Veuillez entrer un email valide.</p>
-          )}
-
           {/* reCAPTCHA invisible (badge reste en bas de l’écran) */}
           <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
@@ -121,6 +121,6 @@ export default function NewsletterForm() {
           {message && <p className="newsletter__form-message">{message}</p>}
         </form>
       </div>
-    </div>
+    </section>
   );
 }

@@ -9,12 +9,12 @@ import iconInclus from '../public/icons/inclus.svg';
 const values = [
   {
     icon: iconBienveillance,
-    title: 'Bienveillance & non-jugement',
+    title: 'Bienveillance et non-jugement',
     description: 'Un espace où l’on peut être soi, pleinement, sans pression.',
   },
   {
     icon: iconYoga,
-    title: 'Pratiques douces & accessibles',
+    title: 'Pratiques douces et accessibles',
     description: 'Yoga, pilates, méditation... adaptés au rythme et aux besoins de chacune.',
   },
   {
@@ -24,17 +24,17 @@ const values = [
   },
   {
     icon: iconCercle,
-    title: 'Cercle féminin & entraide',
+    title: 'Cercle féminin et entraide',
     description: 'Des retraites réservées aux femmes, pour tisser des liens profonds.',
   },
   {
     icon: iconSpiritualite,
-    title: 'Spiritualité libre & simple',
+    title: 'Spiritualité libre et simple',
     description: 'Des rituels accessibles, sans dogme, pour nourrir l’âme en douceur.',
   },
   {
     icon: iconInclus,
-    title: 'Tout inclus & sans charge mentale',
+    title: 'Tout inclus et sans charge mentale',
     description:
       'Hébergement, repas, activités... tout est prévu pour que vous puissiez vraiment lâcher prise.',
   },

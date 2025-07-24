@@ -22,8 +22,18 @@ export default function Home() {
     <main className="page-home">
       <ImgText
         // className="right"
-        imgSrc="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-        imgAlt="Maison Lutéa"
+        imgSrc={[
+          'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks',
+          'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
+          'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks',
+          'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
+        ]}
+        imgAlt={[
+          'Maison Lutéa - vue 1',
+          'Maison Lutéa - vue 2',
+          'Maison Lutéa - vue 3',
+          'Maison Lutéa - vue 4',
+        ]}
         title={
           <>
             Retraites entre femmes,
@@ -103,7 +113,7 @@ export default function Home() {
             apaisant. Vous n’avez qu’à vous laisser porter.
           </>
         }
-        primaryButtonText="Réserver une de nos retraites"
+        primaryButtonText="Réserver une retraites"
         secondaryButtonText="Voir le détail des retraites"
         hrefButtonSecondary="/retraites"
       />

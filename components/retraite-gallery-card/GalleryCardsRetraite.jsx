@@ -16,8 +16,13 @@ export default function GalleryCardsRetraite() {
           <CardRetraite
             key={card.id + idx}
             image={card.imageCard}
+            altImage={card.altImageCard}
             titre={card.titreCard}
-            categorie={card.categorie}
+            places={card.places}
+            nbJours={card.nbJours}
+            dates={card.dates}
+            prix={card.prix}
+            texteModal={card.texteModal}
             onClick={() => handleOpen(card)}
           />
         ))}
@@ -31,7 +36,7 @@ export default function GalleryCardsRetraite() {
             </button>
             <ImgText
               imgSrc={selected.imageModal}
-              imgAlt={selected.titreModal}
+              imgAlt={selected.altImageModal}
               title={selected.titreModal}
               // Remplacement de 'text' par un composant qui affiche le HTML
               text={<div dangerouslySetInnerHTML={{ __html: selected.texteModal }} />}

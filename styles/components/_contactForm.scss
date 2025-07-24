@@ -1,0 +1,119 @@
+@use '../base/variables' as v;
+
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  &__row {
+    display: flex;
+    gap: 0.2rem;
+    &--checkbox {
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  textarea {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    border-radius: v.$border-radius;
+    font-size: 1rem;
+    background: v.$color-white;
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    input[type='checkbox'] {
+      margin-right: 0.5rem;
+      accent-color: v.$color-title;
+      width: 24px;
+      height: 24px;
+    }
+
+    &-text a {
+      color: v.$color-title;
+      font-weight: 500;
+    }
+  }
+
+  button[type='submit'] {
+    margin-top: 0.5rem;
+    padding: 0.7rem 2.2rem;
+    background: v.$color-primary;
+    color: v.$color-white;
+    border: none;
+    border-radius: v.$border-radius;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+      background 0.2s,
+      color 0.2s;
+    &:hover:not(:disabled) {
+      background: v.$color-title;
+    }
+    &:disabled {
+      background: v.$button-secondary-bg-hover;
+      color: v.$color-white;
+      cursor: not-allowed;
+    }
+  }
+
+  .spinner {
+    border: 3px solid v.$color-white;
+    border-top: 3px solid v.$color-title;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-left: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__message {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    &--success {
+      color: v.$color-title;
+    }
+    &--error {
+      color: #c00;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__error {
+    color: #c00;
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+  }
+}

@@ -64,7 +64,7 @@ export default function BurgerMenu() {
                   <Link href="/retraites">Les retraites</Link>
                 </li>
                 <li onClick={handleClose}>
-                  <Link href="/galerie">Gallerie</Link>
+                  <Link href="/galerie">Galerie</Link>
                 </li>
               </ul>
               <hr className="burger-modal__separator" />
@@ -74,9 +74,6 @@ export default function BurgerMenu() {
                 </li>
                 <li onClick={handleClose}>
                   <Link href="/faq">FAQ</Link>
-                </li>
-                <li onClick={handleClose}>
-                  <Link href="/plan-du-site">Plan de site</Link>
                 </li>
               </ul>
             </nav>

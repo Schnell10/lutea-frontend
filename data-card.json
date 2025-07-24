@@ -1,50 +1,170 @@
 [
   {
     "id": "aout-2025",
-    "categorie": "Bien-être holistique",
-    "titreCard": "Retraite d'été dans les Cévennes",
+    "titreCard": "Retraite d'\u00e9t\u00e9 dans les C\u00e9vennes",
     "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "titreModal": "Retraite d'été",
-    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "texteModal": "Une retraite immersive de 4 jours <strong class='text-bold'>entre femmes</strong>, pour ralentir, respirer, bouger, créer et partager.<br /><br /><strong class='text-bold'>Yoga, pilates, ateliers créatifs, repas sains et cercles de parole</strong> dans un lieu naturel apaisant.",
-    "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/pdf-vide.pdf",
-    "boutonReserverLabel": "Réserver cette retraite"
+    "altImageCard": "lutea-retraite-ete",
+    "titreModal": "Retraite d'\u00e9t\u00e9",
+    "imageModal": [
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
+    ],
+    "altImageModal": [
+      "lutea-retraite-ete",
+      "lutea-retraite-ete",
+      "lutea-retraite-ete",
+      "lutea-retraite-ete"
+    ],
+    "texteModal": "Une retraite immersive de 4 jours <strong class='text-bold'>entre femmes</strong>, pour ralentir, respirer, bouger, cr\u00e9er et partager.<br /><br /><strong class='text-bold'>Yoga, pilates, ateliers cr\u00e9atifs, repas sains et cercles de parole</strong> dans un lieu naturel apaisant.",
+    "boutonPdfLabel": "T\u00e9l\u00e9charger le programme",
+    "pdfUrl": "/pdfs/programme-ete.pdf",
+    "boutonReserverLabel": "R\u00e9server cette retraite",
+    "places": 12,
+    "prix": 180,
+    "nbJours": 4,
+    "dates": [
+      {
+        "start": "2025-08-14",
+        "end": "2025-08-17"
+      },
+      {
+        "start": "2025-08-28",
+        "end": "2025-08-31"
+      }
+    ]
   },
   {
     "id": "septembre-2025",
-    "categorie": "Yoga & nutrition",
-    "titreCard": "Week-end bien-être septembre",
-    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "titreModal": "Retraite de rentrée",
-    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "texteModal": "Un week-end bien-être pour se recentrer avant l'automne.<br /><br />Au programme : <strong class='text-bold'>yoga, méditation, balade en nature, ateliers healthy et temps de repos</strong>.<br /><br /><strong class='text-bold'>Formule tout inclus</strong> dans un cadre doux et naturel.",
-    "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/pdf-vide.pdf",
-    "boutonReserverLabel": "Réserver cette retraite"
+    "titreCard": "Week-end bien-\u00eatre septembre",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+    "altImageCard": "lutea-retraite-rentree",
+    "titreModal": "Retraite de rentr\u00e9e",
+    "imageModal": [
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
+    ],
+    "altImageModal": [
+      "lutea-retraite-rentree",
+      "lutea-retraite-rentree",
+      "lutea-retraite-rentree",
+      "lutea-retraite-rentree"
+    ],
+    "texteModal": "Un week-end bien-\u00eatre pour se recentrer avant l'automne.<br /><br />Au programme : <strong class='text-bold'>yoga, m\u00e9ditation, balade en nature, ateliers healthy et temps de repos</strong>.<br /><br /><strong class='text-bold'>Formule tout inclus</strong> dans un cadre doux et naturel.",
+    "boutonPdfLabel": "T\u00e9l\u00e9charger le programme",
+    "pdfUrl": "/pdfs/programme-septembre.pdf",
+    "boutonReserverLabel": "R\u00e9server cette retraite",
+    "places": 10,
+    "prix": 150,
+    "nbJours": 3,
+    "dates": [
+      {
+        "start": "2025-09-12",
+        "end": "2025-09-14"
+      }
+    ]
   },
   {
-    "id": "aout-2025",
-    "categorie": "Bien-être holistique",
-    "titreCard": "Retraite d'été dans les Cévennes",
-    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "titreModal": "Retraite d'été",
-    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "texteModal": "Une retraite immersive de 4 jours <strong class='text-bold'>entre femmes</strong>, pour ralentir, respirer, bouger, créer et partager.<br /><br /><strong class='text-bold'>Yoga, pilates, ateliers créatifs, repas sains et cercles de parole</strong> dans un lieu naturel apaisant.",
-    "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/pdf-vide.pdf",
-    "boutonReserverLabel": "Réserver cette retraite"
+    "id": "octobre-2025",
+    "titreCard": "Pause automnale",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+    "altImageCard": "lutea-retraite-automne",
+    "titreModal": "Retraite d'automne",
+    "imageModal": [
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
+    ],
+    "altImageModal": [
+      "lutea-retraite-automne",
+      "lutea-retraite-automne",
+      "lutea-retraite-automne",
+      "lutea-retraite-automne"
+    ],
+    "texteModal": "Offrez-vous une parenth\u00e8se douce pour accueillir l\u2019automne en s\u00e9r\u00e9nit\u00e9.<br /><br /><strong class='text-bold'>Pilates, m\u00e9ditation, cr\u00e9ation de macram\u00e9 et cuisine v\u00e9g\u00e9tale</strong> dans un lieu ressour\u00e7ant.",
+    "boutonPdfLabel": "T\u00e9l\u00e9charger le programme",
+    "pdfUrl": "/pdfs/programme-octobre.pdf",
+    "boutonReserverLabel": "R\u00e9server cette retraite",
+    "places": 14,
+    "prix": 190,
+    "nbJours": 3,
+    "dates": [
+      {
+        "start": "2025-10-03",
+        "end": "2025-10-05"
+      },
+      {
+        "start": "2025-10-17",
+        "end": "2025-10-19"
+      }
+    ]
   },
   {
-    "id": "septembre-2025",
-    "categorie": "Yoga & nutrition",
-    "titreCard": "Week-end bien-être septembre",
-    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "titreModal": "Retraite de rentrée",
-    "imageModal": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks",
-    "texteModal": "Un week-end bien-être pour se recentrer avant l'automne.<br /><br />Au programme : <strong class='text-bold'>yoga, méditation, balade en nature, ateliers healthy et temps de repos</strong>.<br /><br /><strong class='text-bold'>Formule tout inclus</strong> dans un cadre doux et naturel.",
-    "boutonPdfLabel": "Télécharger le programme",
-    "pdfUrl": "/pdfs/pdf-vide.pdf",
-    "boutonReserverLabel": "Réserver cette retraite"
+    "id": "novembre-2025",
+    "titreCard": "Cercle jeune maman",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+    "altImageCard": "lutea-retraite-maman",
+    "titreModal": "Retraite jeune maman",
+    "imageModal": [
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
+    ],
+    "altImageModal": [
+      "lutea-retraite-maman",
+      "lutea-retraite-maman",
+      "lutea-retraite-maman",
+      "lutea-retraite-maman"
+    ],
+    "texteModal": "Un temps pour soi en post-partum.<br /><br /><strong class='text-bold'>Yoga doux, cercles de parole, nutrition post-natale et temps de repos</strong> entre femmes, dans une bulle s\u00e9curisante.",
+    "boutonPdfLabel": "T\u00e9l\u00e9charger le programme",
+    "pdfUrl": "/pdfs/programme-maman.pdf",
+    "boutonReserverLabel": "R\u00e9server cette retraite",
+    "places": 8,
+    "prix": 160,
+    "nbJours": 3,
+    "dates": [
+      {
+        "start": "2025-11-07",
+        "end": "2025-11-09"
+      }
+    ]
+  },
+  {
+    "id": "decembre-2025",
+    "titreCard": "Rituel de fin d\u2019ann\u00e9e",
+    "imageCard": "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+    "altImageCard": "lutea-retraite-rituel",
+    "titreModal": "Retraite de pleine lune",
+    "imageModal": [
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg",
+      "https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
+    ],
+    "altImageModal": [
+      "lutea-retraite-rituel",
+      "lutea-retraite-rituel",
+      "lutea-retraite-rituel",
+      "lutea-retraite-rituel"
+    ],
+    "texteModal": "Cl\u00f4turez l\u2019ann\u00e9e en conscience sous la pleine lune.<br /><br /><strong class='text-bold'>M\u00e9ditations guid\u00e9es, rituels de passage, journaling et bains sonores</strong> dans une ambiance intime et sacr\u00e9e.",
+    "boutonPdfLabel": "T\u00e9l\u00e9charger le programme",
+    "pdfUrl": "/pdfs/programme-rituel.pdf",
+    "boutonReserverLabel": "R\u00e9server cette retraite",
+    "places": 10,
+    "prix": 200,
+    "nbJours": 3,
+    "dates": [
+      {
+        "start": "2025-12-12",
+        "end": "2025-12-14"
+      }
+    ]
   }
 ]

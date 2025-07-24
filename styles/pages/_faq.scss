@@ -1,1 +1,5 @@
-/* pages/_faq.scss */
+.page-faq {
+  display: grid;
+  grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
+  column-gap: 24px;
+}
