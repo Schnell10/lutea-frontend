@@ -1,3 +1,0 @@
-export default function ModalCalendly() {
-  return <div>Calendly Modal</div>;
-}

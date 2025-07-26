@@ -8,7 +8,7 @@ export default function NavBar() {
     <div className="navbar">
       <div className="navbar__offer">
         <p className="navbar__offer-text">Paiement en 2x disponible</p>
-        <Button className="button-gold" label="Réserver une retraite" />
+        <Button className="button-gold" label="Réserver une retraite" href="/booking" />
       </div>
       <div className="navbar__usual">
         <div className="navbar__usual-left">

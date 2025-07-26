@@ -111,7 +111,7 @@ export default function NewsletterForm() {
             </p>
           </label>
 
-          {/* reCAPTCHA invisible (badge reste en bas de l’écran) */}
+          {/* reCAPTCHA invisible  */}
           <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
             size="invisible"

@@ -7,7 +7,7 @@
 
 @use './components/button';
 @use './components/form';
-@use './components/modal';
+@use './components/bookingChooseRetreat';
 @use './components/accordion';
 @use './components/burgerMenu';
 @use './components/navBar';
@@ -17,6 +17,10 @@
 @use './components/cardRetreat';
 @use './components/galleryCardRetreat';
 @use './components/contactForm';
+@use './components/bookingCalendar';
+@use './components/bookingConfirmation';
+@use './components/bookingPayment';
+@use './components/bookingSelectNumber';
 
 @use './layout/header';
 @use './layout/footer';
@@ -37,3 +41,6 @@
 @use './pages/galerie';
 @use './pages/faq';
 @use './pages/contact';
+@use './pages/sitemap';
+@use './pages/page404';
+@use './pages/booking';

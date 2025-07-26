@@ -114,6 +114,7 @@ export default function Home() {
           </>
         }
         primaryButtonText="Réserver une retraites"
+        hrefButtonPrimary="/booking"
         secondaryButtonText="Voir le détail des retraites"
         hrefButtonSecondary="/retraites"
       />

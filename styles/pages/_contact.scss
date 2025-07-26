@@ -2,6 +2,9 @@
 
 .page-contact {
   margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
+  column-gap: 24px;
 
   &__title {
     text-align: center;
@@ -9,24 +12,18 @@
   }
 
   &__container {
-    grid-column: 2 / span 12;
+    grid-column: 3 / span 10;
   }
 
   &__content {
     display: flex;
-    display: grid;
-    grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
-    column-gap: 24px;
+    gap: 36px;
 
     &-left {
-      grid-column: 3 / span 4;
       display: flex;
       flex-direction: column;
       gap: 2rem;
-    }
-
-    .contact-form {
-      grid-column: 8 / span 5;
+      max-width: 420px;
     }
   }
 

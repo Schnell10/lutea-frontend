@@ -1,0 +1,32 @@
+@use '../base/variables' as v;
+
+.page-sitemap {
+  display: grid;
+  grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
+  column-gap: 24px;
+  margin: 5rem 0;
+
+  &__container {
+    grid-column: 2 / span 12;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 2.5rem;
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    background: v.$color-white;
+    font-size: 1.15rem;
+    color: v.$color-text;
+    font-weight: 600;
+    padding: 1.1rem 1.5rem;
+    border-radius: v.$border-radius;
+  }
+}

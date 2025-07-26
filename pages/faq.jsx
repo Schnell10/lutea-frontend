@@ -25,23 +25,17 @@ const items = [
   },
   {
     question: 'Comment réserver ma place ?',
-    reponse:
-      'Les réservations se font directement via le formulaire de contact ou notre lien Calendly (indiqué sur chaque retraite). Un acompte peut être demandé pour valider votre inscription.',
+    reponse: 'Les réservations se font directement via le notre site internet.',
   },
   {
     question: 'Où ont lieu les retraites ?',
     reponse:
-      'Les retraites se déroulent dans les Cévennes, à seulement 45 minutes de Montpellier, dans un lieu sélectionné pour son calme et sa connexion à la nature.',
+      'Les retraites se déroulent la plupart du temps dans les Cévennes, à seulement 45 minutes de Montpellier, dans un lieu sélectionné pour son calme et sa connexion à la nature.',
   },
   {
     question: 'Combien de participantes par retraite ?',
     reponse:
       'Nous limitons volontairement à 12 participantes par session afin de garantir une ambiance intime et un accompagnement personnalisé.',
-  },
-  {
-    question: 'Et si je dois annuler ?',
-    reponse:
-      'En cas d’annulation, merci de nous contacter rapidement. Les conditions précises (report, remboursement, etc.) sont détaillées dans nos CGV.',
   },
   {
     question: 'Les retraites sont-elles adaptées aux jeunes mamans ?',

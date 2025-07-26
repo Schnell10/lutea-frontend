@@ -43,8 +43,8 @@
     input[type='checkbox'] {
       margin-right: 0.5rem;
       accent-color: v.$color-title;
-      width: 24px;
-      height: 24px;
+      width: 36px;
+      height: 36px;
     }
 
     &-text a {
@@ -71,7 +71,7 @@
       background: v.$color-title;
     }
     &:disabled {
-      background: v.$button-secondary-bg-hover;
+      background-color: rgba(v.$button-primary-bg, 0.56);
       color: v.$color-white;
       cursor: not-allowed;
     }

@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import validator from 'validator';
 import Link from 'next/link';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -13,6 +14,8 @@ export default function ContactForm() {
   });
   const [status, setStatus] = useState(null);
   const [emailTouched, setEmailTouched] = useState(false);
+  const [recaptchaError, setRecaptchaError] = useState('');
+  const recaptchaRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -34,10 +37,20 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('loading');
+    setRecaptchaError('');
+    let token = '';
+    try {
+      token = await recaptchaRef.current.executeAsync();
+      recaptchaRef.current.reset();
+    } catch (err) {
+      setStatus('error');
+      setRecaptchaError('Erreur reCAPTCHA, veuillez réessayer.');
+      return;
+    }
     const res = await fetch('/api/resend/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
+      body: JSON.stringify({ ...form, token }),
     });
     if (res.ok) {
       setStatus('success');
@@ -128,6 +141,12 @@ export default function ContactForm() {
           />
         )}
       </button>
+      <ReCAPTCHA
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        size="invisible"
+        ref={recaptchaRef}
+      />
+      {recaptchaError && <div className="contact-form__error">{recaptchaError}</div>}
       {status === 'success' && (
         <div className="newsletter__form-message newsletter__form-message--success">
           Message envoyé ✅

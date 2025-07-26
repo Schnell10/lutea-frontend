@@ -17,7 +17,7 @@ export default function CardRetraite({
 
   let dateDisplay = '';
   if (Array.isArray(dates) && dates.length > 0 && dates[0].start && dates[0].end) {
-    dateDisplay = `Prochaine date du <span class="text-bold">${formatDate(dates[0].start)}</span> au <span class="text-bold">${formatDate(dates[0].end)}</span>`;
+    dateDisplay = `<p>Prochaine date du <span class="text-bold">${formatDate(dates[0].start)}</span> au <span class="text-bold">${formatDate(dates[0].end)}</span></p>`;
   }
 
   return (

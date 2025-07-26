@@ -1,0 +1,184 @@
+@use '../base/variables' as v;
+
+.booking-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 1.5rem;
+    font-family: 'Tan Nimbus', serif;
+    color: v.$color-title;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: v.$color-title;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid v.$color-primary;
+    padding-bottom: 0.5rem;
+  }
+
+  &__summary {
+    background: v.$color-white;
+    border-radius: v.$border-radius;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+  }
+
+  &__retreat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__retreat-header {
+    margin-bottom: 1rem;
+  }
+
+  &__retreat-title {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: v.$color-title;
+  }
+
+  &__retreat-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    color: v.$color-text;
+
+    svg {
+      color: v.$color-primary;
+      flex-shrink: 0;
+    }
+  }
+
+  &__participants {
+    background: v.$color-white;
+    border-radius: v.$border-radius;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+  }
+
+  &__participants-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__participant {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: v.$color-white;
+    border-radius: 8px;
+    border-left: 4px solid v.$color-primary;
+  }
+
+  &__participant-number {
+    font-weight: 600;
+    color: v.$color-primary;
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+
+  &__participant-info {
+    flex: 1;
+  }
+
+  &__participant-name {
+    font-weight: 600;
+    color: v.$color-title;
+    margin-bottom: 0.2rem;
+  }
+
+  &__participant-email {
+    font-size: 0.9rem;
+    color: v.$color-text;
+  }
+
+  &__price {
+    background: v.$color-white;
+    border-radius: v.$border-radius;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+  }
+
+  &__price-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__price-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    color: v.$color-text;
+  }
+
+  &__price-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: v.$color-title;
+    border-top: 2px solid v.$color-primary;
+  }
+
+  &__legal {
+    background: v.$color-white;
+    border-radius: v.$border-radius;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    border-left: 4px solid v.$color-primary;
+  }
+
+  &__legal-content {
+    p {
+      margin: 0 0 1rem 0;
+      font-size: 0.95rem;
+      color: v.$color-text;
+      line-height: 1.5;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    color: v.$color-primary;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}

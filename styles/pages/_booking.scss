@@ -1,0 +1,132 @@
+@use '../base/variables' as v;
+
+.page-booking {
+  display: grid;
+  grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
+  column-gap: 24px;
+  margin: 5rem 0 10rem 0;
+
+  .booking-container {
+    grid-column: 3 / span 10;
+
+    .booking-steps {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 3rem 4rem 3rem;
+
+      .booking-step {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        opacity: 0.5;
+        transition: opacity 0.2s;
+
+        &--active {
+          opacity: 1;
+          .booking-step__number {
+            background: v.$color-primary;
+            color: v.$color-white;
+          }
+          .booking-step__label {
+            color: v.$color-title;
+            font-weight: 600;
+          }
+        }
+        &--done {
+          opacity: 1;
+          .booking-step__number {
+            background: rgba(v.$color-primary, 0.56);
+            color: v.$color-white;
+          }
+          .booking-step__label {
+            color: rgba(v.$color-primary, 0.56);
+          }
+        }
+
+        &__number {
+          width: 2.2rem;
+          height: 2.2rem;
+          border-radius: 50%;
+          background: v.$color-white;
+          color: v.$color-title;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-bottom: 0.2rem;
+          transition:
+            background 0.2s,
+            color 0.2s;
+        }
+        &__label {
+          font-size: 1.05rem;
+          color: v.$color-title;
+          text-align: center;
+          transition:
+            color 0.2s,
+            font-weight 0.2s;
+        }
+      }
+    }
+
+    .booking-step-content {
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+
+    .booking-step-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.2rem;
+      width: 100%;
+      &.both-button-active {
+        justify-content: center;
+        gap: 3rem;
+        .booking-step__btn {
+          width: 10rem;
+        }
+      }
+
+      .booking-step__btn {
+        padding: 0.7rem 2.2rem;
+        border-radius: 2rem;
+        border: none;
+        background: v.$button-secondary-bg;
+        color: v.$color-title;
+        font-size: 1.1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          color 0.2s;
+        &:hover:not(:disabled) {
+          background: v.$button-secondary-bg-hover;
+          color: v.$color-white;
+        }
+        &:disabled {
+          background: rgba(v.$color-primary, 0.56);
+          color: v.$color-white;
+          cursor: not-allowed;
+        }
+        &--primary {
+          background: v.$color-primary;
+          color: v.$color-white;
+          font-weight: 600;
+          &:hover:not(:disabled) {
+            background: v.$color-title;
+            color: v.$color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-booking + .section-newsletter {
+  display: none;
+}

@@ -10,6 +10,9 @@
   padding: 0 12px;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: v.$button-gold-bg-hover;

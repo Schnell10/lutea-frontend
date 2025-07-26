@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+
+.page-404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+
+  &__container {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: v.$color-white;
+    border-radius: v.$border-radius;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 800;
+    color: v.$color-gold-hover;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  &__subtitle {
+    font-size: 1.3rem;
+    color: v.$color-text;
+    margin-bottom: 2.2rem;
+  }
+}
+
+.page-404 + .section-newsletter {
+  display: none;
+}

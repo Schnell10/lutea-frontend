@@ -1,0 +1,100 @@
+@use '../base/variables' as v;
+
+.booking-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  &__title {
+    font-size: 1.5rem;
+    font-family: 'Tan Nimbus', serif;
+    color: v.$color-title;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .react-calendar {
+    border-radius: v.$border-radius;
+    border: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    font-family: inherit;
+    background: v.$color-white;
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+
+    &__navigation {
+      button {
+        min-width: 2.2rem;
+        font-size: 1.2rem;
+        color: v.$color-title;
+        background: none;
+        border-radius: 8px;
+        border: none;
+        transition:
+          background 0.18s,
+          color 0.18s;
+        &:hover {
+          background: v.$color-primary;
+          color: v.$color-white;
+        }
+      }
+      &__label {
+        pointer-events: none;
+      }
+    }
+
+    button {
+      border: none;
+      background: none;
+      font-size: 1rem;
+      color: v.$color-title;
+      border-radius: 8px;
+      transition:
+        background 0.18s,
+        color 0.18s;
+      &:hover:not(:disabled) {
+        background: v.$color-primary;
+        color: v.$color-white;
+      }
+      &:disabled {
+        color: #bbb;
+        background: none;
+      }
+    }
+
+    &__tile--now {
+      background: #f7f7f7;
+      color: v.$color-title;
+    }
+  }
+
+  &__tile--available {
+    background: rgba(v.$color-primary, 0.56) !important;
+    color: v.$color-white !important;
+    font-weight: 600;
+    border-radius: 0 !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__tile--selected {
+    background: v.$color-primary !important;
+    color: v.$color-white !important;
+    font-weight: 700;
+    border-radius: 0 !important;
+    z-index: 2;
+  }
+
+  &__tile--hovered {
+    background: v.$color-primary !important;
+    color: v.$color-white !important;
+    font-weight: 600;
+    border-radius: 0 !important;
+    position: relative;
+    z-index: 1;
+  }
+}

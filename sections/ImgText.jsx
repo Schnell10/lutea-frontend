@@ -10,6 +10,7 @@ export default function ImgText({
   text,
   primaryButtonText,
   primaryButtonAction,
+  hrefButtonPrimary,
   secondaryButtonText,
   secondaryButtonAction,
   onOpenModal,
@@ -34,7 +35,7 @@ export default function ImgText({
     if (!isArray || images.length <= 1 || isHovered || isTransitioning) return;
     autoSlideRef.current = setInterval(() => {
       triggerNext();
-    }, 6000);
+    }, 4000);
     return () => clearInterval(autoSlideRef.current);
     // eslint-disable-next-line
   }, [images.length, isArray, isHovered, isTransitioning]);
@@ -52,14 +53,17 @@ export default function ImgText({
     setIsTransitioning(true);
   };
 
-  // Fin de la transition : on change l'image courante
+  // Fin de la transition : on change l'image courante juste avant la fin
   useEffect(() => {
     if (!isTransitioning || nextIndex === null) return;
+    // On change l'index juste avant la fin de la transition
     const timeout = setTimeout(() => {
       setCurrentIndex(nextIndex);
-      setIsTransitioning(false);
-      setNextIndex(null);
-    }, 1500); // 1.5s pour correspondre à la transition CSS
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setNextIndex(null);
+      }, 80); // petit délai pour laisser le DOM se mettre à jour
+    }, 1420); // 80ms avant la fin de l'animation (1.5s)
     return () => clearTimeout(timeout);
   }, [isTransitioning, nextIndex]);
 
@@ -170,6 +174,7 @@ export default function ImgText({
               <Button
                 className="button-primary"
                 label={primaryButtonText}
+                href={hrefButtonPrimary}
                 onClick={primaryButtonAction}
               />
             )}
