@@ -121,6 +121,10 @@ export default function BookingSelectNumber() {
               <span>{placesDisponibles} places disponibles</span>
             </div>
           </div>
+
+          <p className="booking-select-number__price-payment">
+            <span>Paiement en 2x ou 3x disponible</span>
+          </p>
         </div>
 
         {/* Section droite : Formulaires participants */}

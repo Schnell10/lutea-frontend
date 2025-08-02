@@ -12,7 +12,7 @@ export default function Home() {
     setBanner({
       type: 'image',
       src: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
-      title: 'Maison LUTÉA',
+      title: 'LUTÉA',
       subtitle: 'Des retraites bien-être au cœur des Cévennes',
     });
     return () => resetBanner();

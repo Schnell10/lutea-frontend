@@ -103,14 +103,31 @@
     transform: translate(-50%, -50%);
   }
 
-  &__card-places {
+  &__card-places-button {
     position: absolute;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     width: 100%;
     z-index: 2;
-    color: v.$color-white;
     bottom: 0.5rem;
     left: 50%;
     transform: translateX(-50%);
+
+    .booking-choose-retreat__card-places {
+      text-align: center;
+      color: v.$color-white;
+    }
+
+    .button-primary {
+      background-color: rgba(129, 160, 133, 0.56);
+      width: 70%;
+      min-height: 2rem;
+
+      &:hover {
+        background-color: rgba(129, 160, 133, 0.8);
+      }
+    }
   }
 }

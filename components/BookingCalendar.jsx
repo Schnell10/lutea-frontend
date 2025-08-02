@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useBookingStore } from '../store/useBookingStore';
@@ -9,6 +9,7 @@ export default function BookingCalendar() {
   const setDate = useBookingStore((s) => s.setDate);
   const selectedDate = useBookingStore((s) => s.selectedDate);
   const [hoveredBlock, setHoveredBlock] = useState(null);
+  const [activeStartDate, setActiveStartDate] = useState(new Date());
 
   const retreat = data.find((r) => r.id === selectedRetreatId);
   const availableDates = retreat?.dates || [];
@@ -20,6 +21,14 @@ export default function BookingCalendar() {
     const selectedDateStr = selectedDate.toLocaleDateString('en-CA'); // Format YYYY-MM-DD
     return selectedDateStr >= start && selectedDateStr <= end;
   });
+
+  // Définit la vue initiale sur le mois de la première retraite
+  useEffect(() => {
+    if (availableDates.length > 0) {
+      const firstRetreatDate = new Date(availableDates[0].start);
+      setActiveStartDate(firstRetreatDate);
+    }
+  }, [availableDates]);
 
   // Récupère tous les jours disponibles pour les retraites
   function getAllRetreatDays(dates) {
@@ -69,6 +78,8 @@ export default function BookingCalendar() {
         value={selectedBlock ? [new Date(selectedBlock.start), new Date(selectedBlock.end)] : null}
         selectRange={false}
         onClickDay={handleDayClick}
+        activeStartDate={activeStartDate}
+        onActiveStartDateChange={({ activeStartDate }) => setActiveStartDate(activeStartDate)}
         tileDisabled={({ date, view }) => {
           if (view !== 'month') return false;
           const iso = date.toLocaleDateString('en-CA'); // Format YYYY-MM-DD

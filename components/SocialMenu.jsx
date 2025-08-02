@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 export default function SocialMenu() {
   return (
@@ -12,6 +12,11 @@ export default function SocialMenu() {
       <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
         <li className="facebook">
           <FontAwesomeIcon icon={faFacebookF} />
+        </li>
+      </a>
+      <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+        <li className="tiktok">
+          <FontAwesomeIcon icon={faTiktok} />
         </li>
       </a>
     </ul>

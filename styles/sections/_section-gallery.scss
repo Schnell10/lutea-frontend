@@ -10,24 +10,23 @@
 
   &__filters {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     button {
-      background: rgba(v.$color-white, 0.8);
+      background: v.$color-background-icon;
       color: v.$color-title;
-      border: 1px solid v.$color-title;
-      border-radius: 2rem;
+      border-radius: v.$border-radius;
       padding: 0.5rem 1.5rem;
       font-size: 0.9rem;
-      font-weight: 500;
+      font-weight: 600;
       cursor: pointer;
       transition:
         background 0.4s,
         color 0.4s;
       &.active,
       &:hover {
-        background: v.$color-title;
-        color: v.$color-white;
+        background: v.$color-background-icon-hover;
       }
     }
   }

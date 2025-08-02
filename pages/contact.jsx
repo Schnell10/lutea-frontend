@@ -2,7 +2,7 @@ import ContactForm from 'components/ContactForm';
 import { useEffect } from 'react';
 import { useBannerStore } from 'store/useBannerStore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope as faEnvelopeRegular } from '@fortawesome/free-regular-svg-icons';
 
 export default function Contact() {
@@ -50,6 +50,12 @@ export default function Contact() {
                 >
                   <FontAwesomeIcon icon={faInstagram} />
                   @lutea.retraites
+                </a>
+              </div>
+              <div className="page-contact__contact-link">
+                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                  +33 6 72 16 55 04
                 </a>
               </div>
             </div>

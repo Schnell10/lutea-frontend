@@ -33,7 +33,10 @@
     background: v.$color-white;
     border-radius: v.$border-radius;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    // height: fit-content;
+
+    &__price-payment {
+      color: v.$color-text;
+    }
   }
 
   &__counter {
