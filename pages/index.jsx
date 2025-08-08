@@ -12,7 +12,7 @@ export default function Home() {
     setBanner({
       type: 'image',
       src: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
-      title: 'LUTÉA',
+      title: 'LUTEA',
       subtitle: 'Des retraites bien-être au cœur des Cévennes',
     });
     return () => resetBanner();
@@ -29,10 +29,10 @@ export default function Home() {
           'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
         ]}
         imgAlt={[
-          'Maison Lutéa - vue 1',
-          'Maison Lutéa - vue 2',
-          'Maison Lutéa - vue 3',
-          'Maison Lutéa - vue 4',
+          'Maison Lutea - vue 1',
+          'Maison Lutea - vue 2',
+          'Maison Lutea - vue 3',
+          'Maison Lutea - vue 4',
         ]}
         title={
           <>
@@ -60,7 +60,7 @@ export default function Home() {
           <>
             Pensées pour les femmes en quête de mieux-être,{' '}
             <strong className="text-bold">
-              les retraites LUTÉA sont une parenthèse pour se recentrer et prendre soin de soi, en
+              les retraites LUTEA sont une parenthèse pour se recentrer et prendre soin de soi, en
               douceur
             </strong>
             .
@@ -75,11 +75,11 @@ export default function Home() {
       <ImgFullText
         className="right"
         imgSrc="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
-        imgAlt="Maison Lutéa"
-        title={<>L’essence de LUTÉA</>}
+        imgAlt="Maison Lutea"
+        title={<>L’essence de LUTEA</>}
         text={
           <>
-            Lutéa est né de{' '}
+            Lutea est né de{' '}
             <strong className="text-bold">
               l’envie de deux professionnelles d’unir leurs expertises pour créer un espace dédié
               aux femmes
@@ -95,13 +95,13 @@ export default function Home() {
       <ImgDuoText
         className="right"
         imgSrc1="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
-        imgAlt1="Maison Lutéa"
+        imgAlt1="Maison Lutea"
         imgSrc2="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-        imgAlt2="Maison Lutéa"
+        imgAlt2="Maison Lutea"
         title="Nos retraites bien-être"
         text={
           <>
-            Chaque retraite LUTÉA est une expérience différente, avec son atmosphère, ses ateliers
+            Chaque retraite LUTEA est une expérience différente, avec son atmosphère, ses ateliers
             et son rythme.{' '}
             <strong className="text-bold">
               Yoga, pilates, création, nutrition, nature, temps pour soi…
@@ -113,7 +113,7 @@ export default function Home() {
             apaisant. Vous n’avez qu’à vous laisser porter.
           </>
         }
-        primaryButtonText="Réserver une retraites"
+        primaryButtonText="Réserver une retraite"
         hrefButtonPrimary="/booking"
         secondaryButtonText="Voir le détail des retraites"
         hrefButtonSecondary="/retraites"

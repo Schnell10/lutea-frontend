@@ -24,10 +24,7 @@ export default function Banner({ type = 'image', src, alt = 'Bannière', childre
         />
       )}
       <div className="banner_overlay" />
-      <div className="banner_content">
-        <Image src="/svg/logo-lutea.svg" alt="logo Lutea" width={150} height={150} />
-        {children}
-      </div>
+      <div className="banner_content">{children}</div>
     </div>
   );
 }

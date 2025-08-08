@@ -9,10 +9,16 @@ $color-text: #4e4e4e; // Texte principal
 // #000000 peu etre mieux pour le text
 $color-background: #efe8e2; // Fond global
 $color-white: #ffffff;
+$color-white-overlay: #e6e6e6; // Blanc avec effet overlay (rgba(0,0,0,0.25) par-dessus)
 
 $color-background-icon: rgba(166, 179, 155, 0.3);
 $color-background-icon-hover: rgba(166, 179, 155, 0.6);
 $color-icon: $color-title;
+
+// 🎨 Couleurs pour navbar transparente
+$color-background-icon-transparent: rgba(255, 255, 255, 0.3);
+$color-background-icon-hover-transparent: rgba(255, 255, 255, 0.5);
+$color-icon-transparent: $color-white;
 
 // 🔘 Bouton primaire
 $button-primary-bg: $color-primary;

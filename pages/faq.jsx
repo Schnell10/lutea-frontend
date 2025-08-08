@@ -4,7 +4,7 @@ import Accordion from 'components/Accordion';
 
 const items = [
   {
-    question: 'Qui peut participer à une retraite LUTÉA ?',
+    question: 'Qui peut participer à une retraite LUTEA ?',
     reponse:
       'Nos retraites sont exclusivement réservées aux femmes, quel que soit l’âge ou la condition physique. Que vous soyez jeune maman, femme active, en reconversion ou simplement en quête de bien-être, vous êtes la bienvenue.',
   },
@@ -53,7 +53,7 @@ const items = [
       "Non, tout est fourni sur place : tapis de yoga, coussins, matériel pour les ateliers, etc. Vous n'avez besoin que de vos effets personnels et de vêtements confortables.",
   },
   {
-    question: 'Puis-je offrir une retraite LUTÉA en cadeau ?',
+    question: 'Puis-je offrir une retraite LUTEA en cadeau ?',
     reponse:
       'Oui, nous proposons des cartes cadeaux personnalisées. Contactez-nous pour en savoir plus.',
   },
@@ -68,7 +68,7 @@ export default function FAQ() {
       type: 'image',
       src: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
       title: 'FAQ',
-      subtitle: 'Toutes les réponses à vos questions sur nos retraites bien-être féminines LUTÉA',
+      subtitle: 'Toutes les réponses à vos questions sur nos retraites bien-être féminines LUTEA',
     });
     return () => resetBanner();
   }, [setBanner, resetBanner]);

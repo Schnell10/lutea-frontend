@@ -3,7 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { subscribeToBrevo } from '../lib/newsletter/subscribeBrevo';
 import Link from 'next/link';
 import validator from 'validator';
-import { Mail, Sun, Leaf, Sprout } from 'lucide-react';
+// import { Mail, Sun, Leaf, Sprout } from 'lucide-react';
 
 export default function NewsletterForm() {
   // States pour l'email, le consentement RGPD et les messages
@@ -49,7 +49,7 @@ export default function NewsletterForm() {
   return (
     <section className="section-newsletter">
       <div className="newsletter__container">
-        <div className="newsletter-decor-icons">
+        {/* <div className="newsletter-decor-icons">
           <Mail className="icon" />
           <Sprout className="icon" />
           <Leaf className="icon" />
@@ -57,12 +57,12 @@ export default function NewsletterForm() {
           <Mail className="icon" />
           <Leaf className="icon" />
           <Sprout className="icon" />
-        </div>
+        </div> */}
         <div className="newsletter__content">
-          <h2 className="newsletter__content-title">Rejoignez la communauté LUTÉA</h2>
+          <h2 className="newsletter__content-title">Rejoignez la communauté LUTEA</h2>
           <p className="newsletter__content-text">
             Recevez nos retraites en avant-première, nos conseils bien-être et toute l’actualité
-            LUTÉA dans votre boîte mail.
+            LUTEA dans votre boîte mail.
           </p>
         </div>
         <form className="newsletter__form" onSubmit={handleSubmit}>

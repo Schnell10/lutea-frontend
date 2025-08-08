@@ -1,88 +1,47 @@
-/* sections/_section-img-trio-text.scss */
+/* sections/_section-img-duo-text.scss */
 @use '../base/variables' as v;
 
-.section-img-duo-text.right .section-img-duo-text__container {
-  flex-direction: row-reverse;
-
-  .section-img-duo-text__img-duo-container {
-    justify-content: flex-end;
-  }
-
-  .section-img-duo-text__img--top-right {
-    top: 0;
-    right: 0;
-    left: auto;
-  }
-
-  .section-img-duo-text__img--bottom-left {
-    bottom: 0;
-    left: 0;
-  }
-}
-
-.section-img-duo-text__container {
-  grid-column: 2 / span 12;
-  display: flex;
-  align-items: center;
-  gap: calc((100% - 144px - 24px * 11) / 12);
-  padding: 5rem 0;
-}
-
 .section-img-duo-text {
-  display: grid;
-  grid-template-columns: 72px repeat(12, minmax(0px, 1fr)) 72px;
-  column-gap: 24px;
-
-  &__img-duo-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+  padding: 5rem 0;
+  &__container {
+    min-height: 85vh;
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: stretch;
   }
 
-  &__img-duo-container-supperpose {
-    position: relative;
-    width: 500px;
-    min-width: 500px;
-    height: 520px;
+  &__img-left,
+  &__img-right {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__img {
-    border-radius: 4px;
-    aspect-ratio: 1/0.9;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-
-    &--top-right {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 320px;
-      aspect-ratio: 16 / 10;
-      z-index: 1;
-    }
-
-    &--bottom-left {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 280px;
-      aspect-ratio: 3 / 4;
-      z-index: 2;
-    }
   }
 
   &__content {
+    background: linear-gradient(120deg, #4e6351 0%, #4e6351 85%, #39503e 100%);
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
 
     &-title {
-      color: v.$color-title;
+      color: v.$color-white;
+      text-align: center;
     }
 
     &-text {
       font-size: 1rem;
-      color: v.$color-text;
+      color: v.$color-white;
+      text-align: center;
       white-space: pre-line;
     }
 
@@ -92,9 +51,23 @@
 
     &-buttons {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1rem;
+
+      .button-primary,
+      .button-secondary {
+        color: v.$color-white;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+      }
     }
   }
 }

@@ -4,15 +4,16 @@
   .section-author {
     display: flex;
     flex-direction: column;
-    padding: 5rem 0;
-    background: linear-gradient(120deg, #4e6351 0%, #4e6351 85%, #39503e 100%);
+    padding: 2.5rem 0;
 
     &__title {
       text-align: center;
-      color: $color-white;
+      color: $color-title;
+      padding-bottom: 2.5rem;
     }
 
     .section-img-text {
+      background: linear-gradient(120deg, #4e6351 0%, #4e6351 85%, #39503e 100%);
       &__content {
         &-title,
         &-text {

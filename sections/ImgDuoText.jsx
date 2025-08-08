@@ -37,28 +37,20 @@ export default function ImgDuoText({
   return (
     <section className={`section-img-duo-text section ${className}`.trim()}>
       <div className="section-img-duo-text__container">
-        <div className="section-img-duo-text__img-duo-container">
-          <div className="section-img-duo-text__img-duo-container-supperpose">
-            {imgSrc1 && (
-              <Image
-                className="section-img-duo-text__img section-img-duo-text__img--top-right"
-                src={imgSrc1}
-                alt={imgAlt1 || ''}
-                width={400}
-                height={400}
-              />
-            )}
-            {imgSrc2 && (
-              <Image
-                className="section-img-duo-text__img section-img-duo-text__img--bottom-left"
-                src={imgSrc2}
-                alt={imgAlt2 || ''}
-                width={300}
-                height={300}
-              />
-            )}
-          </div>
+        {/* Image de gauche */}
+        <div className="section-img-duo-text__img-left">
+          {imgSrc1 && (
+            <Image
+              className="section-img-duo-text__img"
+              src={imgSrc1}
+              alt={imgAlt1 || ''}
+              width={800}
+              height={800}
+            />
+          )}
         </div>
+
+        {/* Contenu central */}
         <div className="section-img-duo-text__content">
           {title && <h2 className="section-img-duo-text__content-title">{title}</h2>}
           {text && <div className="section-img-duo-text__content-text">{text}</div>}
@@ -92,6 +84,19 @@ export default function ImgDuoText({
                 />
               )}
             </div>
+          )}
+        </div>
+
+        {/* Image de droite */}
+        <div className="section-img-duo-text__img-right">
+          {imgSrc2 && (
+            <Image
+              className="section-img-duo-text__img"
+              src={imgSrc2}
+              alt={imgAlt2 || ''}
+              width={800}
+              height={800}
+            />
           )}
         </div>
 

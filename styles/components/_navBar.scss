@@ -7,6 +7,18 @@
   width: 100%;
   z-index: 10;
   line-height: 1;
+  transition: all 0.3s ease;
+
+  &--transparent {
+    .navbar__usual {
+      background-color: transparent;
+      box-shadow: none;
+
+      .name-lutea {
+        color: v.$color-white-overlay;
+      }
+    }
+  }
 
   &__offer {
     background-color: v.$color-primary;
@@ -32,6 +44,9 @@
     align-items: center;
     padding: 0 36px;
     position: relative;
+    transition:
+      background-color 0.3s ease,
+      box-shadow 0.3s ease;
 
     &-left,
     &-right {
@@ -52,8 +67,11 @@
       justify-content: center;
 
       .name-lutea {
-        font-size: 24px;
+        font-family: 'Tan Pearl', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
         color: v.$color-title;
+        transition: color 0.3s ease;
       }
     }
   }

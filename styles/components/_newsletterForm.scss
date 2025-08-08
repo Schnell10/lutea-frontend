@@ -130,61 +130,61 @@
   }
 }
 
-.newsletter-decor-icons {
-  position: relative;
-  height: 90px;
-  margin: 2rem 0 1rem 0;
+// .newsletter-decor-icons {
+//   position: relative;
+//   height: 90px;
+//   margin: 2rem 0 1rem 0;
 
-  .icon {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    opacity: 0.9;
+//   .icon {
+//     position: absolute;
+//     width: 22px;
+//     height: 22px;
+//     opacity: 0.9;
 
-    &:nth-child(1) {
-      left: 25%;
-      top: 40%;
-      stroke: v.$color-primary;
-      transform: rotate(-15deg);
-    }
-    &:nth-child(2) {
-      left: 35%;
-      top: 20%;
-      stroke: v.$color-title;
-      transform: rotate(18deg);
-    }
-    &:nth-child(3) {
-      left: 43%;
-      top: 32%;
-      stroke: v.$color-secondary;
-      transform: rotate(-8deg);
-    }
-    &:nth-child(4) {
-      left: 50%;
-      top: 10%;
-      stroke: v.$color-primary;
-      transform: rotate(12deg);
-    }
-    &:nth-child(5) {
-      left: 57%;
-      top: 44%;
-      stroke: v.$color-title;
-      transform: rotate(-22deg);
-    }
-    &:nth-child(6) {
-      left: 65%;
-      top: 24%;
-      stroke: v.$color-secondary;
-      transform: rotate(20deg);
-    }
-    &:nth-child(7) {
-      left: 75%;
-      top: 27%;
-      stroke: v.$color-primary;
-      transform: rotate(-5deg);
-    }
-  }
-}
+//     &:nth-child(1) {
+//       left: 25%;
+//       top: 40%;
+//       stroke: v.$color-primary;
+//       transform: rotate(-15deg);
+//     }
+//     &:nth-child(2) {
+//       left: 35%;
+//       top: 20%;
+//       stroke: v.$color-title;
+//       transform: rotate(18deg);
+//     }
+//     &:nth-child(3) {
+//       left: 43%;
+//       top: 32%;
+//       stroke: v.$color-secondary;
+//       transform: rotate(-8deg);
+//     }
+//     &:nth-child(4) {
+//       left: 50%;
+//       top: 10%;
+//       stroke: v.$color-primary;
+//       transform: rotate(12deg);
+//     }
+//     &:nth-child(5) {
+//       left: 57%;
+//       top: 44%;
+//       stroke: v.$color-title;
+//       transform: rotate(-22deg);
+//     }
+//     &:nth-child(6) {
+//       left: 65%;
+//       top: 24%;
+//       stroke: v.$color-secondary;
+//       transform: rotate(20deg);
+//     }
+//     &:nth-child(7) {
+//       left: 75%;
+//       top: 27%;
+//       stroke: v.$color-primary;
+//       transform: rotate(-5deg);
+//     }
+//   }
+// }
 
 .newsletter__form-message {
   font-size: 1rem;

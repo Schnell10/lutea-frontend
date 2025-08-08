@@ -25,13 +25,13 @@ export default function Concept() {
       <ImgDuoText
         // className="right"
         imgSrc1="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
-        imgAlt1="Maison Lutéa"
+        imgAlt1="Maison Lutea"
         imgSrc2="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-        imgAlt2="Maison Lutéa"
+        imgAlt2="Maison Lutea"
         title="Reconnexion, douceur et sororité"
         text={
           <>
-            LUTÉA propose des retraites bien-être pensées comme des{' '}
+            LUTEA propose des retraites bien-être pensées comme des{' '}
             <strong className="text-bold">bulles hors du temps</strong>. Dans un cadre intimiste,
             entre femmes, nous créons un espace de pause, d’écoute et de retour à soi. <br />
             <br />
@@ -44,12 +44,12 @@ export default function Concept() {
       <ImgFullText
         className="right"
         imgSrc="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
-        imgAlt="Maison Lutéa"
+        imgAlt="Maison Lutea"
         title={<>Notre vision</>}
         text={
           <>
             Notre vision du bien-être va au-delà du physique. <br />
-            Chez LUTÉA, nous croyons en un{' '}
+            Chez LUTEA, nous croyons en un{' '}
             <strong className="text-bold">
               équilibre subtil entre le corps, l’esprit et l’émotionnel
             </strong>
@@ -68,11 +68,11 @@ export default function Concept() {
         }
       />
       <div className="section-author">
-        <h2 className="section-author__title">Deux femmes, une vision</h2>
+        <h2 className="section-author__title">Les fondatrices</h2>
         <ImgText
           className="right"
           imgSrc="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-          imgAlt="Maison Lutéa"
+          imgAlt="Maison Lutea"
           title={<>Caroline, l’écoute du corps et du cœur</>}
           text={
             <>
@@ -96,7 +96,7 @@ export default function Concept() {
         <ImgText
           // className="right"
           imgSrc="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-          imgAlt="Maison Lutéa"
+          imgAlt="Maison Lutea"
           title={<>Stéphanie Chaker</>}
           text={
             <>

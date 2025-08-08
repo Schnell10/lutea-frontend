@@ -15,7 +15,7 @@ export default function Contact() {
       src: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
       title: 'Contact',
       subtitle:
-        'Formulaire de contact pour en savoir plus sur les retraites bien-être féminines LUTÉA',
+        'Formulaire de contact pour en savoir plus sur les retraites bien-être féminines LUTEA',
     });
     return () => resetBanner();
   }, [setBanner, resetBanner]);
@@ -36,9 +36,9 @@ export default function Contact() {
             </p>
             <div className="page-contact__contact-links">
               <div className="page-contact__contact-link">
-                <a href="mailto:contact@lutea.fr" className="page-contact__contact-mail">
+                <a href="mailto:contact@lutea-retrat.com" className="page-contact__contact-mail">
                   <FontAwesomeIcon icon={faEnvelopeRegular} />
-                  contact@lutea.fr
+                  contact@lutea-retrat.com
                 </a>
               </div>
               <div className="page-contact__contact-link">

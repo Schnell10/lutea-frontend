@@ -24,11 +24,11 @@ export default function Retraites() {
       <ImgText
         // className="right"
         imgSrc="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-        imgAlt="Maison Lutéa"
+        imgAlt="Maison Lutea"
         title={<>Ralentir, ressentir, se relier</>}
         text={
           <>
-            Les retraites LUTÉA sont pensées comme des{' '}
+            Les retraites LUTEA sont pensées comme des{' '}
             <strong className="text-bold">bulles hors du quotidien</strong>.
             <br />
             En petit groupe, dans un cadre naturel, chaque séjour mêle yoga, pilates, méditation,
@@ -46,13 +46,13 @@ export default function Retraites() {
       <ImgDuoText
         className="right"
         imgSrc1="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg"
-        imgAlt1="Maison Lutéa"
+        imgAlt1="Maison Lutea"
         imgSrc2="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-        imgAlt2="Maison Lutéa"
+        imgAlt2="Maison Lutea"
         title="Des lieux choisis avec soin"
         text={
           <>
-            Chaque retraite LUTÉA prend vie dans un lieu différent, mais toujours avec la même
+            Chaque retraite LUTEA prend vie dans un lieu différent, mais toujours avec la même
             exigence :
             <strong className="text-bold">
               un cadre naturel, ressourçant, intime, propice au lâcher-prise
@@ -80,11 +80,11 @@ export default function Retraites() {
       <ImgText
         // className="right"
         imgSrc="https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-portrait-lutea_ppeoks"
-        imgAlt="Maison Lutéa"
+        imgAlt="Maison Lutea"
         title={<>Une cuisine saine et pleine de saveurs</>}
         text={
           <>
-            L’alimentation fait partie intégrante de l’expérience LUTÉA. <br />
+            L’alimentation fait partie intégrante de l’expérience LUTEA. <br />
             <br />
             <strong className="text-bold">Tous les repas sont inclus dans le séjour</strong>, pensés
             pour nourrir le corps sans l’alourdir : une cuisine de saison, végétarienne en majorité,
@@ -104,7 +104,7 @@ export default function Retraites() {
 
       <section className="section-retreats">
         <div className="section-retreats__container">
-          <h2 className="section-retreats__title">Toutes les retraites LUTÉA</h2>
+          <h2 className="section-retreats__title">Toutes les retraites LUTEA</h2>
           <GalleryCardsRetraite />
         </div>
       </section>

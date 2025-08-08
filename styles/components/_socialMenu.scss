@@ -29,3 +29,12 @@
     }
   }
 }
+
+.navbar--transparent .social-menu li {
+  background-color: v.$color-background-icon-transparent;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: v.$color-background-icon-hover-transparent;
+  }
+}
