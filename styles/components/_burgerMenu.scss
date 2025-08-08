@@ -31,6 +31,15 @@
   }
 }
 
+// Au survol de la navbar transparente, reprendre les couleurs classiques
+.navbar--transparent:hover .burger-menu {
+  background-color: v.$color-background-icon;
+
+  &:hover {
+    background-color: v.$color-background-icon-hover;
+  }
+}
+
 .burger-modal {
   position: fixed;
   inset: 0;

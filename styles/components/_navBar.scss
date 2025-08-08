@@ -18,6 +18,18 @@
         color: v.$color-white-overlay;
       }
     }
+
+    // Au survol, reprendre les couleurs classiques
+    &:hover {
+      .navbar__usual {
+        background-color: v.$color-background;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .name-lutea {
+          color: v.$color-title;
+        }
+      }
+    }
   }
 
   &__offer {

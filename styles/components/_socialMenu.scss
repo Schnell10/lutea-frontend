@@ -38,3 +38,12 @@
     background-color: v.$color-background-icon-hover-transparent;
   }
 }
+
+// Au survol de la navbar transparente, reprendre les couleurs classiques
+.navbar--transparent:hover .social-menu li {
+  background-color: v.$color-background-icon;
+
+  &:hover {
+    background-color: v.$color-background-icon-hover;
+  }
+}
