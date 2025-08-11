@@ -62,7 +62,7 @@ export default function Retraites() {
             <br />
             Pas de centre figé ni de lieu unique, ce qui compte, c’est
             <strong className="text-bold">
-              l’énergie du lieu, la beauté de l’environnement, et la sensation d’être au bon
+              {''} l’énergie du lieu, la beauté de l’environnement, et la sensation d’être au bon
               endroit, au bon moment
             </strong>
             .

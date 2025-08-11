@@ -2,7 +2,7 @@
 @use 'sass:color';
 
 .footer {
-  background-color: v.$color-primary;
+  background-color: v.$color-title;
   padding: 3rem 3rem 0.5rem 3rem;
   display: flex;
   flex-direction: column;
@@ -20,12 +20,12 @@
   .social-menu {
     margin-bottom: 2rem;
     li {
-      background-color: v.$color-primary;
+      background-color: v.$color-title;
       transition: background-color 0.2s ease-in-out;
       width: 3.6rem;
       height: 3.6rem;
       &:hover {
-        background: color.scale(v.$color-primary, $lightness: 4%);
+        background: color.scale(v.$color-title, $lightness: 4%);
       }
 
       svg {

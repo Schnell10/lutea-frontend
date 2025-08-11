@@ -4,6 +4,12 @@ export default function Document() {
   return (
     <Html lang="fr">
       <Head>
+        {/* Meta viewport pour le responsive mobile */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+
         {/* Favicon classique */}
         <link rel="icon" href="/favicons/favicon.ico" />
 
