@@ -1,42 +1,36 @@
 import Image from 'next/image';
-import iconBienveillance from '../public/icons/bienveillance.svg';
-import iconYoga from '../public/icons/yoga.svg';
-import iconNature from '../public/icons/nature.svg';
-import iconCercle from '../public/icons/cercle.svg';
-import iconSpiritualite from '../public/icons/spiritualite.svg';
-import iconInclus from '../public/icons/inclus.svg';
 
 const values = [
   {
-    icon: iconBienveillance,
     title: 'Bienveillance et non-jugement',
     description: 'Un espace où l’on peut être soi, pleinement, sans pression.',
+    bg: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
   },
   {
-    icon: iconYoga,
     title: 'Pratiques douces et accessibles',
     description: 'Yoga, pilates, méditation... adaptés au rythme et aux besoins de chacune.',
+    bg: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
   },
   {
-    icon: iconNature,
     title: 'Ancrage dans la nature',
     description: 'Des lieux choisis pour leur beauté, leur calme et leur énergie.',
+    bg: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
   },
   {
-    icon: iconCercle,
     title: 'Cercle féminin et entraide',
     description: 'Des retraites réservées aux femmes, pour tisser des liens profonds.',
+    bg: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
   },
   {
-    icon: iconSpiritualite,
     title: 'Spiritualité libre et simple',
     description: 'Des rituels accessibles, sans dogme, pour nourrir l’âme en douceur.',
+    bg: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
   },
   {
-    icon: iconInclus,
     title: 'Tout inclus et sans charge mentale',
     description:
       'Hébergement, repas, activités... tout est prévu pour que vous puissiez vraiment lâcher prise.',
+    bg: 'https://res.cloudinary.com/docejfkog/image/upload/f_auto,q_auto/test-horizontal_zheyel.jpg',
   },
 ];
 
@@ -48,11 +42,25 @@ export default function SectionIcon() {
         <div className="section-icon__grid">
           {values.map((item, index) => (
             <div key={index} className="section-icon__item">
-              <div className="section-icon__icon">
-                <Image src={item.icon} alt="" width={40} height={40} />
+              <div className="section-icon__bg">
+                {/* Image de fond en cover */}
+                {item.bg && (
+                  <Image
+                    src={item.bg}
+                    alt=""
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }}
+                    priority={index < 3}
+                  />
+                )}
+                <div className="section-icon__overlay" />
               </div>
-              <h3 className="section-icon__item-title">{item.title}</h3>
-              <p className="section-icon__item-description">{item.description}</p>
+
+              <div className="section-icon__content">
+                <h3 className="section-icon__item-title">{item.title}</h3>
+                <p className="section-icon__item-description">{item.description}</p>
+              </div>
             </div>
           ))}
         </div>
